@@ -69,6 +69,7 @@ socket.on('failed-to-join', (msg: string) => {
 });
 socket.on('lobby-deleted',()=>{
     console.log("here");
+    alert("Success! You have successfully deleted the lobby. Now redirecting back to dashboard...")
     window.location.href = '/dashboard';
 })
 
